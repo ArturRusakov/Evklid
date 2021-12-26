@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <div class="container">
       <div class="header__container">
@@ -65,31 +64,82 @@
         </div>
       </div>
     </section>
-    <script>
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us__content">
+          <h2 class="about-us__heading heading">О нас</h2>
+          <p class="about-us__text text">
+            Также как перспективное планирование создаёт необходимость включения в производственный план
+            целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей
+            масштабности и грандиозности. А также диаграммы связей могут быть описаны
+            максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов
+            требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений!
+            Следует отметить, что высококачественный
+            прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых
+            участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что
+            высококачественный прототип будущего проекта способствует
+            повышению качества экспериментов.
+          </p>
+          <div class="about-us__cards">
+            <div class="about-us__card-left" style="background-image: url('/img/about-us1.jpg');">
+              <div class="about-us__card-left-content">
+                <p class="about-us__card-left-content-text"> Принимая во внимание показатели успешности,
+                  перспективное планирование способствует подготовке и реализации новых принципов.</p>
+                <button class="about-us__card-left-content-btn btn">Подробнее</button>
+              </div>
+            </div>
+            <div class="about-us__cards-right">
+              <div class="about-us__cards-right-item">
+                <img src="/img/about-us2.svg" alt="" class="about-us__cards-right-item-img">
+                <div class="about-us__cards-right-item-content">
+                  <h2 class="about-us__cards-right-item-description description">Консультация с
+                    широким активом</h2>
+                  <p class="about-us__cards-right-item-text text">А также свежий взгляд на привычные
+                    вещи - безусловно открывает новые горизонты для как самодостаточных, так и
+                    внешне зависимых концептуальных решений.</p>
+                </div>
+              </div>
+              <div class="about-us__cards-right-item">
+                <img src="/img/about-us3.svg" alt="" class="about-us__cards-right-item-img">
+                <div class="about-us__cards-right-item-content">
+                  <h2 class="about-us__cards-right-item-description description">В своём стремлении
+                    повысить </h2>
+                  <p class="about-us__cards-right-item-text text">Качество жизни, они забывают, что
+                    сплочённость команды профессионалов представляет собой интересный эксперимент
+                    проверки прогресса профессионального сообщества. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
 
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-    </script>
-    <script src="./script/burger-menu.js" defer></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+  <script src="./script/burger-menu.js" defer></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
 </body>
 
 </html>

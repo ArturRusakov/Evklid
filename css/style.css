@@ -171,6 +171,87 @@ body {
   position: absolute;
   background-size: cover;
 }
+/* About Us */
+.about-us {
+  margin-top: 100px;
+}
+
+.about-us__heading {
+  margin-left: 2px;
+}
+
+.about-us__text {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.about-us__cards {
+  justify-content: space-between;
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+}
+
+.about-us__card-left {
+  position: relative;
+  width: 862px;
+  height: 622px;
+  background-size: 100% cover;
+}
+
+.about-us__card-left-content {
+  padding: 50px 50px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-us__card-left-content-text {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 60%;
+}
+
+.about-us__card-left-content-btn {
+  padding: 19px 38px;
+  width: 175px;
+  height: 60px;
+  background: transparent;
+  border: 3px solid #ff9900;
+  box-sizing: border-box;
+}
+
+.about-us__cards-right {
+  height: 622px;
+}
+
+.about-us__cards-right-item {
+  display: flex;
+  align-items: center;
+  width: 870px;
+  height: 295px;
+  background: #ffffff;
+  border: 1px solid #cacaca;
+}
+
+.about-us__cards-right-item:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.about-us__cards-right-item-img {
+  width: 190px;
+  height: 165px;
+  margin: 0 50px 0 60px;
+}
+
+.about-us__cards-right-item-text {
+  margin-top: 8px;
+  width: 70%;
+}
 
 @media (max-width: 1024px) {
   .menu {
