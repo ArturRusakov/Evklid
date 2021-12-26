@@ -171,7 +171,9 @@ body {
   position: absolute;
   background-size: cover;
 }
+
 /* About Us */
+
 .about-us {
   margin-top: 100px;
 }
@@ -251,6 +253,88 @@ body {
 .about-us__cards-right-item-text {
   margin-top: 8px;
   width: 70%;
+}
+
+/* How we work */
+
+.how-we-work {
+  margin-top: 100px;
+}
+
+.how-we-work__tab-nav {
+  margin-top: 50px;
+  display: flex;
+}
+
+.how-we-work__tab-nav-item {
+  cursor: pointer;
+}
+
+.activeTabNavItem {
+  color: #e1670e;
+}
+
+.how-we-work__tab-nav-item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.how-we-work__tab-content {
+  margin-top: 45px;
+  position: relative;
+  height: 460px;
+}
+
+.how-we-work__tab-content-item {
+  display: none;
+}
+
+.activeTabContent {
+  display: flex;
+}
+
+.how-we-work__tab-content-item-left {
+  width: 50%;
+}
+
+.how-we-work__tab-content-item-left-text {
+  margin-top: 8px;
+  width: 85%;
+}
+
+.how-we-work__tab-content-item-right {
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.how-we-work__tab-content-item-right-img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  max-height: 460px;
+  margin-left: auto;
+}
+
+.how-we-work__tab-content-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.how-we-work__tab-content-btn-more {
+  margin-right: 32px;
+  width: 175px;
+  height: 60px;
+}
+
+.how-we-work__tab-content-btn-contract {
+  cursor: pointer;
+  width: 147px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 19.5px;
+  background: transparent;
+  border: 1px solid #333333;
 }
 
 @media (max-width: 1024px) {
