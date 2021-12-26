@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <title>Евклид</title>
 </head>
 
 <body>
+
   <header class="header">
     <div class="container">
       <div class="header__container">
@@ -34,14 +36,60 @@
             <li class="header__menu-item"><a href="#" class="header__menu-item-link">Отзывы</a></li>
             <li class="header__menu-item"><a href="#" class="header__menu-item-link">Контакты</a></li>
           </ul>
-          <img src="./img/header__search.svg" alt="Поиск">
         </nav>
       </div>
     </div>
   </header>
   <div class="popup" id="popup"></div>
+  <main class="main">
+    <section class="section__hero">
+      <div class="container">
+        <div class="hero__body">
+          <div class="hero__content">
+            <h1 class="hero__content-title">Проектные решения любой сложности</h1>
+            <h2 class="hero__content-description description">Есть над чем задуматься: базовые сценарии
+              поведения пользователей и по сей день остаются уделом проектантов</h2>
+            <button class="hero__content-btn btn">Заказать расчёт</button>
+          </div>
+        </div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background-image: url('/img/hero__swiper1.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('/img/hero__swiper2.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('/img/hero__swiper3.jpg');"></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
 
-  <script src="./script/burger-menu.js" defer></script>
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+    <script src="./script/burger-menu.js" defer></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
 </body>
 
 </html>
