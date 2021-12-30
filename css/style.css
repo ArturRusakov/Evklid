@@ -101,12 +101,13 @@ body {
   display: flex;
 }
 
-.header__nav {
-  display: flex;
-}
-
 .menu {
   display: flex;
+  z-index: 4;
+}
+
+.header__menu-item {
+  z-index: 5;
 }
 
 .nav-item-link {
@@ -115,6 +116,20 @@ body {
   font-size: 18px;
   line-height: 21.94px;
   color: #333333;
+}
+
+.nav-item-link:hover {
+  border-bottom: 2px solid #ff9900;
+}
+
+.nav-item-link:focus {
+  border: 2px solid #ff9900;
+}
+
+.nav-item-link:active {
+  color: #e1670e;
+  border: none;
+  border-bottom: 2px solid #e1670e;
 }
 
 .popup {
@@ -141,7 +156,7 @@ body {
 
 .hero__content {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
 }
 
 .hero__content-title {
@@ -165,6 +180,16 @@ body {
   font-size: 23, 46px;
   font-weight: 700;
   line-height: 28, 6px;
+  transition: background 0.3s ease-in-out;
+}
+
+.hero__content-btn:hover,
+.hero__content-btn:focus {
+  background: rgba(255, 153, 0, 0.7);
+}
+
+.hero__content-btn:active {
+  background: #e1670e;
 }
 
 .swiper {
@@ -232,6 +257,16 @@ body {
   box-sizing: border-box;
 }
 
+.about-us__card-left-content-btn:hover,
+.about-us__card-left-content-btn:focus {
+  background: #ff9900;
+}
+
+.about-us__card-left-content-btn:active {
+  border: none;
+  background: #e1670e;
+}
+
 .about-us__cards-right {
   height: 622px;
 }
@@ -273,6 +308,14 @@ body {
 
 .how-we-work__tab-nav-item {
   cursor: pointer;
+}
+
+.how-we-work__tab-nav-item:hover {
+  color: #ff9900;
+}
+
+.how-we-work__tab-nav-item:focus {
+  border: 1px solid #ff9900;
 }
 
 .activeTabNavItem {
@@ -332,6 +375,15 @@ body {
   height: 60px;
 }
 
+.how-we-work__tab-content-btn-more:hover,
+.how-we-work__tab-content-btn-more:focus {
+  background: #f7b045;
+}
+
+.how-we-work__tab-content-btn-more:active {
+  background: #e1670e;
+}
+
 .how-we-work__tab-content-btn-contract {
   cursor: pointer;
   width: 147px;
@@ -340,6 +392,19 @@ body {
   line-height: 19.5px;
   background: transparent;
   border: 1px solid #333333;
+  transition: background 0.3s ease-in-out;
+}
+
+.how-we-work__tab-content-btn-contract:hover,
+.how-we-work__tab-content-btn-contract:focus {
+  color: white;
+  border: none;
+  background: #666666;
+}
+
+.how-we-work__tab-content-btn-contract:active {
+  color: white;
+  background: #000000;
 }
 
 /* Quest */
@@ -355,10 +420,35 @@ body {
 .accordion__item {
   position: relative;
   border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+  transition: border-top 0.2s ease-in-out;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.accordion__item:first-child {
+  border-top: 2px solid #cacaca;
+  transition: border-top 0.2s ease-in-out;
 }
 
 .accordion__item:last-child {
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 2px solid #cacaca;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.accordion__item:hover,
+.accordion__item:focus {
+  border-top: 1px solid #ff9900;
+  border-bottom: 1px solid #ff9900;
+}
+
+.accordion__item:first-child:hover,
+.accordion__item:first-child:focus {
+  border-top: 2px solid #ff9900;
+}
+
+.accordion__item:last-child:hover,
+.accordion__item:last-child:focus {
+  border-bottom: 2px solid #ff9900;
 }
 
 .accordion__item-title {
@@ -368,14 +458,31 @@ body {
   cursor: pointer;
 }
 
+.accordion__item-title:hover .accordion__item-title-text {
+  color: #ff9900;
+}
+
+.accordion__item-title:hover .accordion__item-title-img svg ellipse,
+.accordion__item-title:hover .accordion__item-title-img svg path {
+  transition: fill 0.2s ease-in-out;
+}
+
+.accordion__item-title:hover .accordion__item-title-img svg ellipse {
+  fill: #ff9900;
+}
+
+.accordion__item-title:hover .accordion__item-title-img svg path {
+  fill: white;
+}
+
 .accordion__item-title-text {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  transition: color 0.2s ease-in-out;
 }
 
 .accordion__item-title-img {
-  background-image: url(../img/quest__cross.svg);
   width: 50px;
   height: 50px;
   position: absolute;
@@ -442,6 +549,22 @@ body {
   size: 60px;
 }
 
+.footer__left-svg {
+  transition: fill 0.5s ease-in-out;
+}
+
+.footer__left-socials-icon:hover .footer__left-svg {
+  fill: #ff9900;
+}
+
+.footer__left-socials-icon:focus .footer__left-svg {
+  border: 1px solid #ff9900;
+}
+
+.footer__left-socials-icon:active .footer__left-svg {
+  fill: #e1670e;
+}
+
 /* middle */
 
 .footer__middle-heading {
@@ -486,6 +609,15 @@ body {
   margin-right: 22px;
   width: 269px;
   height: 58px;
+}
+
+.form__subm-btn:hover,
+.form__subm-btn:focus {
+  background: #f7b045;
+}
+
+.form__subm-btn:active {
+  background: #e1670e;
 }
 
 .form__input-and-checkbox {
